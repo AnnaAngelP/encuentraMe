@@ -1,0 +1,123 @@
+body
+{
+	font-family: arial;
+	font-size: 17px;
+}
+header
+{
+	background: rgb(59, 38, 189);
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 110px;
+	margin: 0px; 
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+}
+header p
+{
+	margin-top: 47px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+div#main
+{
+	margin-top: 170px;
+	margin-right: 20px;
+	margin-left: 20px;
+
+}
+form > div
+{
+	width:92%;
+	margin: 20px 4%;
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: rgb(80, 81, 82);
+}
+
+input
+{
+	height: 26px;
+	border: 1px solid rgb(209, 209, 209);
+	width: 98%;
+	border-radius: 4px;
+	text-align: left;
+	line-height: 20px;
+}
+textarea
+{
+	border: 1px solid rgb(209, 209, 209);
+	width: 98%;
+	height: 120px;
+	border-radius: 4px;
+	text-align: left;
+	line-height: 20px;
+}
+
+div.botones .boton
+{
+	display: inline-block;
+	
+	font-size: 15px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	color: white;
+	
+	width: 98%;
+	height: 98%;
+}
+div.botones
+{
+	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	
+}
+
+div.botones:hover
+{
+	width: 155px;
+	height: 55px;
+}
+
+div#color1 .boton
+{
+	background: rgb(125, 125, 125);
+	margin: auto;
+	font-weight: bolder;
+}
+div#color2 .boton
+{
+	background: rgb(220, 212, 211);
+	color: rgb(60, 60, 60);
+	font-weight: bolder;
+	margin: auto;
+}
+div#color3 .boton
+{
+	background: rgb(233, 10, 10);
+	margin: auto;
+	font-weight: bolder;
+}
+div label
+{
+	margin-bottom: 4px;
+}

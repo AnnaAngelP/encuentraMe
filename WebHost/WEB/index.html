@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset="utf-8">
+		<title>EncuentraMe</title>
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+		<script type="text/javascript" src="CSS/modernizr-custom.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/design.css">
+	</header>
+	
+	<body>
+		<header>
+			<p>Inicia Sesión</p>
+		</header>
+
+		<div id="main">
+			<form  method="post" onsubmit="return enviar();">
+
+				<div>
+					<label>Correo electrónico</label>
+					<input id="correo" type="email" name="correo" title="Porfavor introduce tu correo electrónico" required="">
+				</div>
+
+				<div>
+					<label>Contraseña</label>
+					<input id="contraseña" type="password" name="contraseña" title="Porfavor introduce tu contraseña" required="">
+				</div>
+
+				<div id="color2" class="botones"> 
+					<button class="boton" type="submit" name="submit"> Ingresar </button> 
+				</div>
+			</form>
+
+			<p id="resultado"> </p>
+		</div>
+
+		<script type="text/javascript">
+			function enviar()
+			{
+				var correo=document.getElementById('correo').value;
+				var contraseña=document.getElementById('contraseña').value;
+
+				var dataen='correo='+correo + '&contraseña=' + contraseña;
+
+				$.ajax
+				({
+					type: 'post',
+					url:'PHP/Validacion/valida_login.php',
+					data: dataen,
+					success:function(res)
+					{
+						$("#resultado").html(res);
+					}
+				});
+				return false;
+			}
+		</script>
+		
+
+	</body>
+</html>
